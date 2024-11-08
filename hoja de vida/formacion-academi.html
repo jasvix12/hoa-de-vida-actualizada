@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación Académica</title>
+    <link rel="stylesheet" href="../css/formacion-academi.css">
+</head>
+<body>
+    <!-- Sección de Formación Académica -->
+    <div class="section">
+        <h3 
+            onclick="toggleSection('formacionAcademica')" 
+            class="section-title"
+        >
+            Formación Académica
+        </h3>
+        <div id="formacionAcademica" class="section-content hidden">
+            <p><span class="field-label">Técnicos:</span> Tecnólogo en Programación de Software, SENA - 2024</p>
+            <p><span class="field-label">Estudios Secundarios:</span> Bachiller Académico, Colegio Metropolitano María Occidente - 2010</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

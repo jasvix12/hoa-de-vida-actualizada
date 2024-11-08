@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <!-- Sección de Contacto -->
+    <div class="section">
+        <h3 
+            onclick="toggleSection('contacto')" 
+            class="section-title"
+        >
+            Contacto
+        </h3>
+        <div id="contacto" class="section-content hidden">
+            <p><span class="field-label">Teléfono:</span> +57 320 603 9549</p>
+            <p><span class="field-label">Correo Electrónico:</span> <a href="mailto:jasbi030803@gmail.com">jasbi030803@gmail.com</a></p>
+            <p><span class="field-label">Dirección:</span> Calle 50 #41 - 24, Popayán, Colombia</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

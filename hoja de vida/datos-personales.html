@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="../css/datos-personales.css">
+</head>
+<body>
+
+
+    <!-- Sección de Datos Personales -->
+    <div class="section">
+        <h3 
+            onclick="toggleSection('datosPersonales')" 
+            class="section-title"
+        >
+            Datos Personales
+        </h3>
+        <div id="datosPersonales" class="section-content hidden">
+            <p><span class="field-label">Documento de Identidad:</span> 1002968954</p>
+            <p><span class="field-label">Fecha de Nacimiento:</span> 03/agosto/2003</p>
+            <p><span class="field-label">Lugar de Nacimiento:</span> Popayán</p>
+            <p><span class="field-label">Estado Civil:</span> Soltero</p>
+            <p><span class="field-label">Dirección:</span> Calle 50 #41 - 24</p>
+            <p><span class="field-label">Celular:</span> 3206039549</p>
+            <p><span class="field-label">Gmail:</span> jasbi030803@gmail.com</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
